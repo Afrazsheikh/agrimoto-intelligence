@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/scrape",
+      "destination": "/api/scrape.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/app/$1"
+    }
+  ]
+}
