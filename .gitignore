@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+app/node_modules/
+
+# Production build output
+dist/
+app/dist/
+
+# Logs
+*.log
+
+# Vercel & IDE
+.vercel
+.vscode/
+.idea/

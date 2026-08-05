@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Agrimoto Intelligence - Meesho Sales & Product Analyzer",
+  "version": "1.0.0",
+  "description": "Agrimoto Intelligence - Live Meesho Sales, Daily/Monthly Views, Product Ratings & Seller Business Intelligence Extractor.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.meesho.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Agrimoto Intelligence"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.meesho.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
