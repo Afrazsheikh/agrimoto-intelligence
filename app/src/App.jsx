@@ -264,7 +264,7 @@ export default function App() {
                       onClick={() => setSelectedProd(p)}
                     >
                       <td style={{ padding: '10px 8px', fontWeight: '700', color: '#fff', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <img src={p.image} alt="" style={{ width: '32px', height: '32px', borderRadius: '6px', objectFit: 'cover' }} />
+                        <img src={p.image} alt="" referrerPolicy="no-referrer" style={{ width: '32px', height: '32px', borderRadius: '6px', objectFit: 'cover' }} />
                         <span>{p.title.substring(0, 32)}...</span>
                       </td>
                       <td style={{ padding: '10px 8px', fontWeight: '700', color: '#34d399' }}>₹{p.price}</td>
@@ -319,6 +319,7 @@ export default function App() {
               <img
                 src={selectedProd.image}
                 alt={selectedProd.title}
+                referrerPolicy="no-referrer"
                 className="product-img"
               />
             </div>
